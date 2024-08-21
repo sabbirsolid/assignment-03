@@ -1,22 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+     <!-- daisyUI CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c9679f0948.js" crossorigin="anonymous"></script>
+    <!-- color primary -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'green-primary': '#ABEF5F',
+                'gray-text': '#494949',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .manrope-primary {
+    font-family: "Manrope", sans-serif;
+    }
+    </style>
 </head>
-<body>
+<body class="manrope-primary">
     <!-- Header  -->
      <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Support</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>ContactUs</a></li>
+                    </ul>
+                  </div>
 
-     </header>
-     <!-- main section -->
+                  <a class="btn btn-ghost text-xl font-bold"><i class="fa-solid fa-arrow-right -rotate-45 bg-green-primary text-black p-1.5 rounded-full"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Support</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>ContactUs</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4 ">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  <a class="btn bg-green-primary text-black font-extrabold rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a>
+                </div>
+              </div>
+        </nav>
+        <div class=" mx-auto w-4/5">
+            <!-- img -->
+             <div class="">
+                <img src="./assets/banner.png" alt="">
+             </div>
+             <!-- information -->
+              <div class="space-y-7">
+                <h1 class="lg:text-6xl text-4xl text-black font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="gray-text text-xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <a class="btn bg-green-primary text-black font-extrabold rounded-3xl">View More<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a> 
+              </div>
+        </div>
+     </header>      
       <main>
-
+        <section>
+            <h1 class="lg:text-red-500 text-blue-500">sabbir</h1>
+        </section>
       </main>
       <!-- footer -->
        <footer>
-        
+
        </footer>
 </body>
 </html>
