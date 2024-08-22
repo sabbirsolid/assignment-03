@@ -21,6 +21,8 @@
               colors: {
                 'green-primary': '#ABEF5F',
                 'gray-text': '#494949',
+                'gray-bg': '#E9E9E9',
+
               }
             }
           }
@@ -75,13 +77,14 @@
                     <li><a>ContactUs</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end space-x-4 ">
+                <div class="lg:navbar-end space-x-4 hidden lg:block  ">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                   <a class="btn bg-green-primary text-black font-extrabold rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a>
                 </div>
               </div>
         </nav>
+        <!-- hero section -->
         <div class=" mx-auto w-4/5">
             <!-- img -->
              <div class="">
@@ -91,13 +94,41 @@
               <div class="space-y-7">
                 <h1 class="lg:text-6xl text-4xl text-black font-extrabold">A barn house of this design has a striking appearance</h1>
                 <p class="gray-text text-xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <a class="btn bg-green-primary text-black font-extrabold rounded-3xl">View More<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a> 
+                <a class="btn bg-green-primary text-black font-extrabold rounded-3xl px-7 ">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a> 
               </div>
         </div>
      </header>      
       <main>
-        <section>
-            <h1 class="lg:text-red-500 text-blue-500">sabbir</h1>
+        <!-- about us section -->
+        <section class="bg-gray-bg">
+          <div class="p-5 hidden lg:block"><img src="./assets/Vector.png" alt=""></div>
+            <div class="lg:flex p-10 space-y-10 gap-10">
+              <!-- text info card -->
+             <div class="flex-1 space-y-5">
+              <a class="btn bg-white text-black font-extrabold rounded-3xl py-0 px1"><i class="fa-solid fa-arrow-right text-black"></i>About Us</a>
+              <h1 class="text-5xl font-bold text-black">We design thoughtful, liveable spaces</h1>
+              <p class="gray-text text-base">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <div class="flex bg-white lg:w-4/5 gap-4 rounded-lg p-5">
+                <div><img src="./assets/commercial.png" alt=""></div>
+                <div>
+                  <h2 class="gray-text text-lg font-bold">Commercial</h2>
+                  <p class="gray-text text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <div class="flex bg-white lg:w-4/5 gap-4 rounded-lg p-5">
+                <div><img src="./assets/residential.png" alt=""></div>
+                <div>
+                  <h2 class="gray-text text-lg font-bold">Residential</h2>
+                  <p class="gray-text text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+             </div>
+             <!-- img card -->
+              <div class="flex-1">
+                <img class="pb-5" src="./assets/Rectangle.png" alt="">
+              </div>
+            </div>
         </section>
       </main>
       <!-- footer -->
