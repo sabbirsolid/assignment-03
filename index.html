@@ -20,6 +20,7 @@
             extend: {
               colors: {
                 'green-primary': '#ABEF5F',
+                'green-secondary': 'rgba(171, 239, 95, 0.50)',
                 'gray-text': '#494949',
                 'gray-bg': '#E9E9E9',
                 'card1-color': '#E7C1D3',
@@ -36,6 +37,9 @@
     <style>
         .manrope-primary {
     font-family: "Manrope", sans-serif;
+    }
+    .disscuss-bg{
+      background-image: url("assets/bg.jpg");
     }
     </style>
 </head>
@@ -99,7 +103,7 @@
               <div class="space-y-7">
                 <h1 class="lg:text-6xl text-4xl text-black font-extrabold">A barn house of this design has a striking appearance</h1>
                 <p class="gray-text text-xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <a class="btn bg-green-primary text-black font-extrabold rounded-3xl px-7 ">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a> 
+                <a class="btn bg-green-secondary text-black font-extrabold rounded-3xl px-7 ">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-green-primary text-black p-1.5 rounded-full"></i></a> 
               </div>
         </div>
      </header>      
@@ -171,6 +175,28 @@
             </div>
           </div>
          </section>
+         <!-- our latest portfolio -->
+          <section>
+            
+          </section>
+          <!-- Lest discuss -->
+           <section class="disscuss-bg space-y-5 py-5">
+            <div class="text-center space-y-3 p-3 mx-4 lg:w-1/2 lg:mx-auto">
+              <a class="btn bg-green-secondary text-black font-extrabold rounded-3xl py-0 px1"><i class="fa-solid fa-arrow-right text-black"></i>Let’s Connect</a>
+              <h1 class="text-black text-5xl font-extrabold">Let’s Discuss Next Project</h1>
+              <p class="grad-text text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 lg:w-1/2 lg:mx-auto mx-5 gap-5">
+              <input class=" pl-3 pr-20 py-4 rounded-full" type="Text" name="" id="" placeholder="First Name">
+              <input class=" pl-3 pr-20 py-4 rounded-full" type="text" name="" id="" placeholder="Last Name">
+              <input class=" pl-3 pr-20 py-4 rounded-full" type="number" name="" id="" placeholder="Number">
+              <input class=" pl-3 pr-20 py-4 rounded-full" type="email" name="" id="" placeholder="Email">
+              <input class="pl-3 pt-4 pb-32 rounded-xl lg:col-span-2" type="text" placeholder="Write your message here">
+            </div>
+            <div>
+              <a class="btn bg-green-primary text-black font-extrabold rounded-3xl lg:w-1/2 w-4/5 mx-10 lg:mx-96">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1.5 rounded-full"></i></a>
+            </div>
+           </section>
       </main>
       <!-- footer -->
        <footer>
